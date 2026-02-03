@@ -33,14 +33,14 @@ level: low
 
 ## The Bug
 
-Detection logic relies on process creation records (Windows Security Event ID 4688) that include the `Get-NetTCPConnection` substring in the `CommandLine` field.
+This detection logic relies on PowerShell records that include Get-NETTCPConnection substring.
 
 **The bug:** Reliance on a mutable substring in command-line arguments.
 
 ## Log Source Context
 
-- **Logsource category:** `ps_classic_start` in Sigma = Windows Security Event ID 4688 (process creation)
-- **Logged fields:** `NewProcessName`, `CommandLine` (if enabled), `ParentProcessName`, `Process ID`, `User`, etc.
+- **Logsource category:** `ps_classic_start` in Sigma = PowerShell CommandLine events (event ID 400)
+- **Logged fields:** `CommandLine`, `CommandPath`, `ScriptName`, etc.
 - **Vulnerable field:** `CommandLine`
 
 ## Bypass

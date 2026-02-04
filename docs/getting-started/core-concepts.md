@@ -31,7 +31,9 @@ The **actual implementation** that performs the hypothesis test. Includes:
 
 **Example:**
 ```yaml
-Data|contains: '.DownloadFile(' OR Data|contains: '.DownloadString('
+Data|contains: '.DownloadFile('
+OR
+Data|contains: '.DownloadString('
 ```
 
 ## Hypothesis Testing Framework
@@ -215,11 +217,11 @@ Attacker takes **preparatory steps** to manipulate contextual data that detectio
 
 **A detection rule is ADE-hardened when:**
 
-✅ All ADE taxonomy categories have been evaluated
-✅ Known bypasses have been tested
-✅ Bugs have been fixed or documented as limitations
-✅ Rule focuses on behavioral patterns over exact matches
-✅ Regular re-evaluation scheduled as threats evolve
+- ✅ All ADE taxonomy categories have been evaluated
+- ✅ Known bypasses have been tested
+- ✅ Bugs have been fixed or documented as limitations
+- ✅ Rule focuses on behavioral patterns over exact matches
+- ✅ Regular re-evaluation scheduled as threats evolve
 
 ## Practical Application
 

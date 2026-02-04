@@ -75,8 +75,8 @@ Rather than changing the primary malicious action, the attacker shapes the **sur
 **Result:** In-scope malicious activity bypasses detection without the attacker needing to know the rule exists. This is **unintentional evasion** - a natural consequence of OS behavior.
 
 **Related Research:**
-- [Detection Pitfalls by Jared Atkinson](https://detect.fyi/detection-pitfalls-you-might-be-sleeping-on-52b5a3d9a0c8)
-- [Unintentional Evasion: Command Line Logging Gaps](https://detect.fyi/unintentional-evasion-investigating-how-cmd-fragmentation-hampers-detection-response-e5d7b465758e)
+- [Detection Pitfalls by Daniel Koifman](https://detect.fyi/detection-pitfalls-you-might-be-sleeping-on-52b5a3d9a0c8)
+- [Unintentional Evasion: Command Line Logging Gaps by Kostas](https://detect.fyi/unintentional-evasion-investigating-how-cmd-fragmentation-hampers-detection-response-e5d7b465758e)
 
 ## Examples
 
@@ -227,11 +227,3 @@ ADE3 often appears alongside:
 - ✅ Could shell operators fragment the command?
 
 If you answered "yes" to any category's questions, your rule likely has an ADE3 vulnerability.
-
----
-
-**Navigation:**
-- [← ADE2: Omit Alternatives](ade2-omit-alternatives.md)
-- [Back to Taxonomy Overview](overview.md)
-- [Theory: Detection Logic Bugs](../theory/detection-logic-bugs.md)
-- [Next: ADE4 - Logic Manipulation →](ade4-logic-manipulation.md)

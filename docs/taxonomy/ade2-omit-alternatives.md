@@ -64,16 +64,19 @@ A detection rule has been assessed using the ADE process and it is determined th
 ### Real-World Detection Logic Bugs
 
 **ADE2-01 - API/Function:**
+
 1. **[AWS RDS Changes - API Omissions](../../examples/ade2/aws-rds-changes.md)**
    - Missing `ModifyDBInstance`, `RebootDBInstance`, and snapshot restoration APIs
    - Platform: AWS CloudTrail
 
 **ADE2-02 - Versioning:**
+
 2. **[AWS RDS Changes - Version Drift](../../examples/ade2/aws-rds-changes.md)**
    - EC2-Classic vs EC2-VPC security group APIs
    - Platform: AWS CloudTrail
 
 **ADE2-04 - File Types:**
+
 3. **[BITS Ingress Transfer - Omitted File Types](../../examples/ade2/bits-ingress-transfer.md)**
    - Missing `.7z`, `.gz`, `.py`, `.sql`, macro-enabled Office documents
    - Platform: Windows Elastic Endgame EDR
@@ -141,11 +144,3 @@ ADE2 often appears alongside:
 - Are compressed/archived variants covered?
 
 If you answered "no" or "unsure" to any of these, your rule likely has an ADE2 vulnerability.
-
----
-
-**Navigation:**
-- [← ADE1: Reformatting in Actions](ade1-reformatting-in-actions.md)
-- [Back to Taxonomy Overview](overview.md)
-- [Theory: Detection Logic Bugs](../theory/detection-logic-bugs.md)
-- [Next: ADE3 - Context Development →](ade3-context-development.md)

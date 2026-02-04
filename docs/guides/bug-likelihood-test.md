@@ -82,15 +82,3 @@ Then, continue on with the Bug Likelihoot Test.
 
 
 If multiple items in a single ADE category are flagged, a full ADE analysis of the rule is strongly recommended, starting with adversarial hypothesis testing.
-
-**Contents**
-
-- [README.md](README.md)
-- [Detection Logic Bug Theory](Detection_Logic_Bug_Theory.md)
-- [Detection Logic Bug Taxonomy](Detection_Logic_Bug_Taxonomy.md)
-- [ADE1 Reformatting in Actions](ADE1_Reformatting_in_Actions.md)
-- [ADE2 Omit Alternatives](ADE2_Omit_Alternatives.md)
-- [ADE3 Context Development](ADE3_Context_Development.md)
-- [ADE4 Logic Manipulation](ADE4_Logic_Manipulation.md)
-- **Bug Likelihood Test (Current Page)**
-- [LICENCE](LICENSE)

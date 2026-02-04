@@ -183,7 +183,7 @@ Set-Content -Path "DIRECTORY_TO_WRITE_TO\evil.txt" -Value $file
 
 ---
 
-### 1.5 Fixing the bug
+### Fixing the bug
 
 Recall the hypothesis test:
 - Condition A: substring `Web.Client` exists, AND 
@@ -208,22 +208,9 @@ or
 ```yaml
 condition: selection_webclient or selection_download
 ```
-However, the may be some cases where `Web.Client` can be reformatted or alternative API/Methods be used. See "[Step. 5 Fixing the Bug](\step_5_fixing_the_bug.md)" for a detailed outline on how the Sigma rule [Potential AMSI Bypass Script Using NULL Bits](https://github.com/SigmaHQ/sigma/blob/master/rules/windows/powershell/powershell_script/posh_ps_amsi_null_bits_bypass.yml) picks up these actions, but also has it's own bugs! 
+However, the may be some cases where `Web.Client` can be reformatted or alternative API/Methods be used. See "Fixing the bug" above for a detailed outline on how the Sigma rule [Potential AMSI Bypass Script Using NULL Bits](https://github.com/SigmaHQ/sigma/blob/master/rules/windows/powershell/powershell_script/posh_ps_amsi_null_bits_bypass.yml) picks up these actions, but also has it's own bugs! 
 
 
 ### Continue to [Detection Logic Bug Taxonomy](Detection_Logic_Bug_Taxonomy.md)
 
 There are multiple types of detection logic** bugs, each with their own examples and bypasses. View the Detection Logic Bug Taxonomy for definitions and examples of each.
-
----
-
-**Contents**
--- [README.md](README.md)
-- **Detection  Logic Bug Theory (Current Page)**
-- [Detection  Logic Bug Taxonomy](Detection_Logic_Bug_Taxonomy.md)
-- [ADE1 Reformatting in Actions](ADE1_Reformatting_in_Actions.md)
-- [ADE2 Omit Alternatives](ADE2_Omit_Alternatives.md)
-- [ADE3 Context Development](ADE3_Context_Development.md)
-- [ADE4 Logic Manipulation](ADE4_Logic_Manipulation.md)
-- [Bug Likelihood Test](Bug_Likelihood_Test.md)
-- [LICENCE](LICENSE)

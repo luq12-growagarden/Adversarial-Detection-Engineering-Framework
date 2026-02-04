@@ -14,10 +14,10 @@ This guide walks you through applying the ADE Framework to analyze your first de
 
 **Extract the rule's intended purpose:**
 
-✅ Read the rule description
-✅ Check MITRE ATT&CK mappings
-✅ Review metadata (author notes, references)
-✅ Understand *what* the rule is trying to detect
+- ✅ Read the rule description
+- ✅ Check MITRE ATT&CK mappings
+- ✅ Review metadata (author notes, references)
+- ✅ Understand *what* the rule is trying to detect
 
 **Example:**
 ```yaml
@@ -34,10 +34,10 @@ tags:
 
 **Analyze the hypothesis test:**
 
-✅ What fields are being checked?
-✅ What conditions must be met?
-✅ What Boolean logic is used (AND/OR/NOT)?
-✅ What is the *actual* query doing?
+- ✅ What fields are being checked?
+- ✅ What conditions must be met?
+- ✅ What Boolean logic is used (AND/OR/NOT)?
+- ✅ What is the *actual* query doing?
 
 **Example:**
 ```yaml
@@ -62,7 +62,7 @@ Use the [Bug Likelihood Test](../guides/bug-likelihood-test.md) checklist:
 - [ ] Is there string matching on attacker-controlled fields? → **ADE1-01**
 - [ ] Are there alternative APIs/methods omitted? → **ADE2-01**
 - [ ] Are there OS/version-specific assumptions? → **ADE2-02**
-- [ ] Does it rely on process names without hash checks? → **ADE3-01**
+- [ ] Does it rely on process names without additional checks, such as hashes or original file names? → **ADE3-01**
 - [ ] Are there time-based constraints? → **ADE3-03**
 - [ ] Multiple `NOT` clauses that could be simplified? → **ADE4-01**
 
@@ -183,9 +183,9 @@ detection:
 **Option B: Robust fix (behavioral)**
 ```yaml
 sequence by host.id, process.entity_id with maxspan=5s
-    [network where process.name == "powershell.exe"]
+    [network where process.name in ("powershell.exe", "pwsh.exe")]
     [file where event.action == "create" and
-               process.name == "powershell.exe"]
+               process.name in ("powershell.exe", "pwsh.exe")]
 ```
 
 ### Step 8: Re-test
@@ -225,7 +225,7 @@ CommandLine|contains: "specific_command"
 
 **Fix:** Use behavioral detection or sequence rules
 
-### Pattern 2: Process Name Without Hash
+### Pattern 2: Static Process Name
 
 **Vulnerable:**
 ```yaml
@@ -235,7 +235,7 @@ Image|endswith: '/wget'
 **ADE Categories:**
 - ADE3-01: Process cloning
 
-**Fix:** Add file hash or signature checks
+**Fix:** Add file hash, signature checks, or original file name
 
 ### Pattern 3: Single API Check
 
@@ -281,7 +281,7 @@ detection:
 3. What bypasses can you think of?
 4. How would you fix it?
 
-**Answers:** [See ADE3-01 Example](../../examples/ade3/cat-network-activity.md)
+**Answers:** [See ADE3-01 Example](../../examples/ade3/process-cloning-cat.md)
 
 ## Next Steps
 

